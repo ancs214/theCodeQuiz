@@ -1,3 +1,33 @@
+//declare DOM object references
+let containerEl = document.querySelector(#text-container);
+let questionEl = document.querySelector(#question);
+let btnContainerEl = document.querySelector(#btn-container);
+let btn1 = document.querySelector(#btn1);
+let btn2 = document.querySelector(#btn2);
+let btn3 = document.querySelector(#btn3);
+let btn4 = document.querySelector(#btn4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //start quiz button click: timer starts and first question page presents itself
 
