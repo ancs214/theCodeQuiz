@@ -1,4 +1,5 @@
 //declare DOM object references
+
 let containerEl = document.querySelector("#textContainer");
 let questionEl = document.querySelector("#question");
 let btnContainerEl = document.querySelector("#btnContainer");
@@ -9,32 +10,27 @@ let btn4 = document.querySelector("#btn4");
 
 
 
+//start quiz button click: timer starts 
+let min = 60;
+let counter = 2 * min;
+let startCountdown = setInterval(countdown, 1000);
+window.onload = countdown();
+function countdown() {
+    console.log(counter);
+    counter--;
+    //timer reaches 0, end game html pg loads
+    if (counter === 0) {
+        clearInterval(startCountdown);
+        // window.location = "quiz-end.html";
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//start quiz button click: timer starts and first question page presents itself
 
 //correct answer button click: next question page presents and notification of 'correct' pops up on new page at bottom with border styling
 //incorrect answer button click: next questions page presents and notification of 'incorrect' pops up on new page at bottom with border styling, time is also subtracted from clock
 //repeat this pattern for all questions
 
-//last question complete or timer reaches 0, end game: All done! page presents, final score posted, submit form for initials, and 'correct'/'incorrect pops up with border styling
+//last question complete  timer reaches 0, end game: All done! page presents, final score posted, submit form for initials, and 'correct'/'incorrect pops up with border styling
 //initials and score saved to 'high scores'
 
 //on submit button click: highscores are posted, 'go back' button and 'clear highscores' button presents

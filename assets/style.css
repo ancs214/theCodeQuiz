@@ -28,6 +28,13 @@ body {
      font-weight: 600;
      color: rgb(87, 17, 87);
      padding: 20px;
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+
+ }
+ .high-scores a {
+    margin: 5px;
  }
  
  p {
