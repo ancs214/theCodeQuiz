@@ -35,11 +35,18 @@ body {
      text-align: center;
  }
 
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+}
+
  .btn {
      background-color: rgb(87, 17, 87);
      color: white;
      border-radius: 8px;
      box-shadow: 0 0 5px 4px;
      padding: 3px;
-     margin: 20px;
+     margin: 3px;
+     font-size: 20px;
+     text-align: left;
  }
