@@ -12,7 +12,7 @@ let btn4 = document.querySelector("#btn4");
 
 //start quiz button click: timer starts 
 let min = 60;
-let counter = 2 * min;
+let counter = 0.5 * min;
 let startCountdown = setInterval(countdown, 1000);
 window.onload = countdown();
 function countdown() {
