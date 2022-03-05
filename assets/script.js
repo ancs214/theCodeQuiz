@@ -10,33 +10,57 @@ let btn4 = document.querySelector("#btn4");
 
 
 
+
 //start quiz button click: timer starts 
 let min = 60;
-let counter = 0.5 * min;
+let counter = 6 * min;
 let startCountdown = setInterval(countdown, 1000);
 window.onload = countdown();
 function countdown() {
-    console.log(counter);
+    // console.log(counter);
     counter--;
-    //timer reaches 0, end game html pg loads
+    //timer reaches 0, end game function called
     if (counter === 0) {
         clearInterval(startCountdown);
         // window.location = "quiz-end.html";
     }
 }
 
+let question2 = function() {
+    let question = "The condition in an if / else statement is enclosed within ____.";
+    questionEl.innerHTML = question;
+    btn1.innerHTML = "1. quotes";
+    btn2.innerHTML = "2. curly brackets";
+    btn3.innerHTML = "3. parentheses";
+    btn4.innerHTML = "4. square brackets";
+};
+let question3 = function() {
+    let question = "Arrays in JavaScript can be used to store ____.";
+    questionEl.innerHTML = question;
+    btn1.innerHTML = "1. numbers and strings";
+    btn2.innerHTML = "2. other arrays";
+    btn3.innerHTML = "3. booleans";
+    btn4.innerHTML = "4. all of the above";
+};
+let question4 = function() {
+    let question = "String values must be enclosed within ____ when being assigned to variables.";
+    questionEl.innerHTML = question;
+    btn1.innerHTML = "1. commas";
+    btn2.innerHTML = "2. curly brackets";
+    btn3.innerHTML = "3. quotes";
+    btn4.innerHTML = "4. parentheses";
+}
 
-//correct answer button click: next question page presents and notification of 'correct' pops up on new page at bottom with border styling
-//incorrect answer button click: next questions page presents and notification of 'incorrect' pops up on new page at bottom with border styling, time is also subtracted from clock
-//repeat this pattern for all questions
+// array of functions
+let functionsArray = [
+    question2,
+    question3,
+    question4,
+]
 
-//last question complete  timer reaches 0, end game: All done! page presents, final score posted, submit form for initials, and 'correct'/'incorrect pops up with border styling
-//initials and score saved to 'high scores'
-
-//on submit button click: highscores are posted, 'go back' button and 'clear highscores' button presents
-//'go back' button restarts quiz
-//'clear highscores' erases memory of highscores
-
+btnContainerEl.addEventListener("click", function() {
+question2();
+});
 
 
 
@@ -55,3 +79,36 @@ function countdown() {
 // THEN the game is over
 // WHEN the game is over
 // THEN I can save my initials and score
+
+// function(let functionsArray = [
+//     {
+//         question: "The condition in an if / else statement is enclosed within ____.",
+//         answers: {
+//             1: "quotes",
+//             2: "curly brackets",
+//             3: "parentheses",
+//             4: "square brackets"
+//         }
+//     },
+//     {
+//         question: "Arrays in JavaScript can be used to store ____.",
+//         answers: {
+//             1: "numbers and strings",
+//             2: "other arrays",
+//             3: "booleans",
+//             4: "all of the above"
+//         }
+//     },
+//     {
+//         question: "String values must be enclosed within ____ when being assigned to variables.",
+//         answers: {
+//             1: "commas",
+//             2: "curly brackets",
+//             3: "quotes",
+//             4: "parentheses"
+//         }
+//     },
+// ]
+
+// console.log(functionsArray[0].answers[1]);
+
