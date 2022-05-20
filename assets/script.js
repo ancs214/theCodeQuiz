@@ -26,6 +26,34 @@ function countdown() {
 }
 
 
+let questions = [
+    {
+        question1: 'Commonly used data types do not include: ',
+        choices: ['strings', 'booleans', 'alerts', 'numbers'],
+        answer: C 
+    },
+    {
+        question1: 'The condition in an if/else statement is enclosed with ______',
+        choices: ['quotes', 'curly brackets', 'square brackets', 'parentheses'],
+        answer: A
+    },
+    {
+        question1: 'String values must be enclosed in ______  when being assigned to variables.',
+        choices: ['commas', 'curly brackets', 'quotes', 'parentheses'],
+        answer: A
+    },
+    {
+        question1: 'Arrays in Javascript can be used...',
+        choices: ['numbers and strings', 'other arrays', 'booleans', 'all of the above'],
+        answer: A
+    },
+    {
+        question1: 'A very useful tool used during development for debugging and printing content to the debugger is...',
+        choices: ['Javascript', 'terminal/bash', 'for loops', 'console.log' ],
+        answer: A
+    },
+]
+
 //correct answer button click: next question page presents and notification of 'correct' pops up on new page at bottom with border styling
 //incorrect answer button click: next questions page presents and notification of 'incorrect' pops up on new page at bottom with border styling, time is also subtracted from clock
 //repeat this pattern for all questions
